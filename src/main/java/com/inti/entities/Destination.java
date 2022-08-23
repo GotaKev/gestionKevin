@@ -1,5 +1,41 @@
 package com.inti.entities;
 
-public class Destination {
+import javax.persistence.Entity;
 
+@Entity
+public class Destination {
+	
+	
+	private Long idDestination;
+	private Long longitude;
+	private Long latitude;
+	
+	public Destination() {
+		super();
+	}
+
+	public Long getIdDestination() {
+		return idDestination;
+	}
+
+	public void setIdDestination(Long idDestination) {
+		this.idDestination = idDestination;
+	}
+
+	public Long getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(Long longitude) {
+		this.longitude = longitude;
+	}
+
+	public Long getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(Long latitude) {
+		this.latitude = latitude;
+	}
+	
 }
